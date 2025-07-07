@@ -19,6 +19,8 @@ The code is a bit of a mess. I threw the entire project together pretty quickly 
 4. Add submissions by right clicking them -> "Apps" -> "Add to tracker" *or* you can do "/manualsubmit [username] [decimal coordinates]"
   - The latter is useful when someone submits with non-decimal coordinates or in a format the app can't otherwise read.
 
+You can re-import the submissions.csv into Google MyMaps just like you exported it. If you open the CSV in a program like Excel you can sort them by distance and that sorting will stay when imported into MyMaps.
+
 ## Installation Guide:
 
 ### Prerequisites:
@@ -27,8 +29,9 @@ The code is a bit of a mess. I threw the entire project together pretty quickly 
 ### Installation Steps:
 1. Create a Discord Bot Account.
   - I recommend following the guide here: https://discordpy.readthedocs.io/en/stable/discord.html
-  - Name the application whatever you'd like, do not make it a public bot. **Make sure to copy the bot's token when it is revealed.**
-2. Copy the bot's token to ".env.example" and replace the example text. Do the same with the bot's Application ID. You should now rename this file to just ".env"
+  - Name the application whatever you'd like, do not make it a public bot.
+2. Go to "Bot" on the sidebar and click "Reset Token". Confirm, and the page will give you a token.
+2. Copy the bot's token to ".env.example" and replace the example text. Do the same with the bot's Application ID on the General Information page. You should now rename this file to just ".env"
 3. Open the "Installation" page on the sidebar
 4. Check "User Install", as this application is only being installed to your own Discord account.
 5. Under "Default Install Settings" search for and add the scope "applications.commands". Save the settings.
@@ -38,3 +41,7 @@ The code is a bit of a mess. I threw the entire project together pretty quickly 
 9. When the installation completes type "node commands.js". 
 10. Close and restart Discord completely.
 11. You're done! Now you can run the application in the command prompt by typing "node index.js". Any errors the app runs into should appear in that command prompt, so please share them with Knight if you run into problems.
+
+## Upcoming Features
+1. Ability to save alternate display names for usernames to show up on the tracker
+2. Optional automatic sorting of submissions by distance
