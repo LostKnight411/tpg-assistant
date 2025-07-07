@@ -38,9 +38,9 @@ client.on('interactionCreate', (interaction) => {
       coords = allCoords[0].split(",");
     }
     fun.writeLocation(coords[0], coords[1], authorUsername);
-    // interaction.reply(
-      // {content: `Coordinates: ${coords} \n Added to tracker`, ephemeral: true}
-    // );
+    interaction.reply(
+      {content: `Coordinates: ${coords} \n Added to tracker`, ephemeral: true}
+    );
 	console.log(`Coordinates: ${coords} \n Added to tracker`);
   } else if (interaction.commandName === 'manualadd'){
     const username = interaction.options.getString('username');
