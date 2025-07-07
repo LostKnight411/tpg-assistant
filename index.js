@@ -37,11 +37,11 @@ client.on('interactionCreate', (interaction) => {
     } else {
       coords = allCoords[0].split(",");
     }
-//function writeLocation(lat, lon, name){
     fun.writeLocation(coords[0], coords[1], authorUsername);
-    interaction.reply(
-      {content: `Coordinates: ${coords} \n Added to tracker`, ephemeral: true}
-    );
+    // interaction.reply(
+      // {content: `Coordinates: ${coords} \n Added to tracker`, ephemeral: true}
+    // );
+	console.log(`Coordinates: ${coords} \n Added to tracker`);
   } else if (interaction.commandName === 'manualadd'){
     const username = interaction.options.getString('username');
     const coords = interaction.options.getString('coords');
