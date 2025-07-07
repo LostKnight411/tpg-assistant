@@ -35,12 +35,11 @@ You can re-import the submissions.csv into Google MyMaps just like you exported 
 4. Copy the bot's token to ".env.example" and replace the example text. Do the same with the bot's Application ID on the General Information page. You should now rename this file to just ".env"
 5. Open the "Installation" page on the sidebar
 6. Check "User Install", as this application is only being installed to your own Discord account.
-7. Under "Default Install Settings" search for and add the scope "applications.commands". Save the settings.
-8. Copy the Install Link into your browser and authorize the bot on your account
-9. Open a command prompt inside of the folder and type "npm install" and complete the install. This downloads the extra node.js files the app needs to run.
-10. When the installation completes type "node commands.js". 
-11. Close and restart Discord completely.
-12. You're done! Now you can run the application in the command prompt by typing "node index.js". Any errors the app runs into should appear in that command prompt, so please share them with Knight if you run into problems.
+7. Copy the Install Link into your browser and authorize the bot on your account
+8. Open a command prompt inside of the folder and type "npm install" and complete the install. This downloads the extra node.js files the app needs to run.
+9. When the installation completes type "node commands.js". 
+10. Close and restart Discord completely.
+11. You're done! Now you can run the application in the command prompt by typing "node index.js". Any errors the app runs into should appear in that command prompt, so please share them with Knight if you run into problems.
 
 ## Upcoming Features
 1. Ability to save alternate display names for usernames to show up on the tracker
