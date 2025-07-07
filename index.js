@@ -20,10 +20,10 @@ client.on('interactionCreate', (interaction) => {
   if (interaction.commandName === 'Add to tracker'){
     var targetMessage = interaction.targetMessage.content;
      if(targetMessage == ''){
-      console.log("Content is empty.")
+      //console.log("Content is empty.")
       targetMessage = interaction.targetMessage.messageSnapshots.values().next().value.content;
      }
-    console.log(interaction.targetMessage.messageSnapshots);
+    //console.log(interaction.targetMessage.messageSnapshots);
     console.log(targetMessage);
     allCoords = targetMessage.match(/-?\d+(?:\.\d+)?,\s*-?\d+(?:\.\d+)?/g);
     authorUsername = interaction.targetMessage.author.username;
