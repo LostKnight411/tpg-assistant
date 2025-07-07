@@ -29,8 +29,9 @@ You can re-import the submissions.csv into Google MyMaps just like you exported 
 ### Installation Steps:
 1. Create a Discord Bot Account.
   - I recommend following the guide here: https://discordpy.readthedocs.io/en/stable/discord.html
-  - Name the application whatever you'd like, do not make it a public bot. **Make sure to copy the bot's token when it is revealed.**
-2. Copy the bot's token to ".env.example" and replace the example text. Do the same with the bot's Application ID. You should now rename this file to just ".env"
+  - Name the application whatever you'd like, do not make it a public bot.
+2. Go to "Bot" on the sidebar and click "Reset Token". Confirm, and the page will give you a token.
+2. Copy the bot's token to ".env.example" and replace the example text. Do the same with the bot's Application ID on the General Information page. You should now rename this file to just ".env"
 3. Open the "Installation" page on the sidebar
 4. Check "User Install", as this application is only being installed to your own Discord account.
 5. Under "Default Install Settings" search for and add the scope "applications.commands". Save the settings.
